@@ -1,0 +1,493 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Cormorant Garamond', serif;
+    background:#fffdfb;
+    color:#4b4038;
+}
+
+
+
+/* =====================
+   BOTÃO MÚSICA
+===================== */
+
+.play-cover{
+    position:absolute;
+    top:22px;
+    left:18px;
+    z-index:20;
+    background:transparent;
+    border:none;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+    cursor:pointer;
+}
+
+.circle-play{
+    width:68px;
+    height:68px;
+    border:5px solid #fff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    padding-left:6px;
+    background:rgba(255,255,255,.08);
+}
+
+.play-cover span{
+    font-family:'Cormorant Garamond', serif;
+    font-size:13px;
+    font-weight:400;
+    letter-spacing:2px;
+    text-align:center;
+    color:#fff;
+}
+
+/* =====================
+   FOTO CAPA
+===================== */
+
+.cover-section{
+    width:100%;
+    height:100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+.cover-photo{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center 35%;
+    display:block;
+}
+
+.cover-gradient{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    background:
+    linear-gradient(
+        to bottom,
+        #fffdfb 0%,
+        rgba(255,253,251,0) 18%,
+        rgba(255,253,251,0) 70%,
+        #fffdfb 100%
+    );
+}
+
+/* =====================
+   CONVITE
+===================== */
+
+.invite-section{
+    position:relative;
+    padding:40px 25px 100px;
+    text-align:center;
+    background:#fffdfb;
+}
+
+.verse-box{
+    max-width:700px;
+    margin:0 auto 55px;
+}
+
+.verse-box p{
+    font-size:20px;
+    line-height:1.7;
+    text-transform:uppercase;
+    color:#5d5048;
+}
+
+.verse-box span{
+    display:block;
+    margin-top:20px;
+    letter-spacing:3px;
+    color:#9b7d70;
+}
+
+.blessing{
+    margin-bottom:35px;
+    font-size:23px;
+    color:#c9a27d;
+
+}
+
+.parents{
+    max-width:850px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:70px;
+    font-size:20px;
+    line-height:1.7;
+}
+
+.parents div{
+    width:330px;
+    text-align:center;
+}
+
+.invite-section h1{
+    margin:45px 0 35px;
+    font-family:'Parisienne', cursive;
+    font-size:85px;
+    font-weight:400;
+    color:#b78b5d;
+    line-height:1.1;
+}
+
+.invite-text{
+    font-size:22px;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    line-height:1.6;
+}
+
+.date-box{
+    margin-top:70px;
+}
+
+.date-box p{
+    font-size:48px;
+    color:#c1935d;
+}
+
+.date-box span{
+    font-size:20px;
+    text-transform:uppercase;
+}
+
+/* =====================
+   FOTO CONTAGEM
+===================== */
+
+.countdown-section{
+    position:relative;
+    background:#fffdfb;
+    text-align:center;
+    padding-bottom:90px;
+}
+
+.second-photo-wrap{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+}
+
+.second-photo{
+    width:100%;
+    height:75vh;
+    object-fit:cover;
+    object-position:center 40%;
+    display:block;
+}
+
+.photo-gradient{
+    position:absolute;
+    inset:0;
+    background:
+    linear-gradient(
+        to bottom,
+        #fffdfb 0%,
+        rgba(255,253,251,0) 18%,
+        rgba(255,253,251,0) 70%,
+        #fffdfb 100%
+    );
+}
+
+.count-title{
+    margin:45px 0;
+    font-size:23px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    color:#6b574d;
+}
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.countdown span{
+    display:block;
+    font-size:55px;
+    color:#4b4038;
+}
+
+.countdown small{
+    display:block;
+    margin-top:8px;
+    font-size:12px;
+    text-transform:uppercase;
+}
+
+.countdown strong{
+    font-size:45px;
+}
+
+/* =====================
+   FOTO EXTRA
+===================== */
+
+.extra-photo-wrap{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+}
+
+.extra-photo-wrap::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+
+    background:
+        radial-gradient(
+            circle at bottom right,
+            rgba(255,253,251,.98) 0%,
+            rgba(255,253,251,.90) 10%,
+            rgba(255,253,251,.60) 18%,
+            transparent 30%
+        );
+}
+
+.extra-photo{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/* =====================
+   LOCAL
+===================== */
+
+.location-section{
+    padding:50px 25px 5px;
+    text-align:center;
+    background:#fffdfb;
+}
+
+.section-title{
+    font-size:20px;
+    letter-spacing:7px;
+    text-transform:uppercase;
+    color:#c1935d;
+}
+
+.location-section h2{
+    margin:8px 0 55px;
+    font-family:'Parisienne', cursive;
+    font-size:55px;
+    color:#7a6256;
+    font-weight:400;
+}
+
+.location-time{
+    margin:20px 0 8px;
+    font-size:18px;
+    text-transform:uppercase;
+    letter-spacing:4px;
+    color:#c1935d;
+}
+
+
+.reception-title{
+    margin-top:60px;
+}
+
+/* =====================
+   BOTÕES FINAIS
+===================== */
+
+.buttons-section{
+    max-width:550px;
+    margin:auto;
+    padding:5px 25px 100px;
+    display:flex;
+    flex-direction:column;
+    background:#fffdfb;
+}
+
+.buttons-section a{
+    padding:25px 10px;
+    border-bottom:1px solid #eadfd8;
+    text-decoration:none;
+    font-size:25px;
+    color:#7a6256;
+    transition:.4s;
+}
+
+.buttons-section a:hover{
+    letter-spacing:3px;
+}
+
+.interaction-text{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.interaction-text .heart{
+    font-size:32px;
+    color:#c1935d;
+    margin-bottom:15px;
+}
+
+.interaction-text p{
+    font-size:23px;
+    line-height:1.5;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#7a6256;
+}
+
+/* =====================
+   CELULAR
+===================== */
+
+@media(max-width:768px){
+
+ .cover-section{
+        height:79vh;
+        min-height:79vh;
+    }
+
+    .invite-section{
+        padding-top:0px;
+    }
+
+    .envelope-card{
+        width:88%;
+        height:570px;
+    }
+
+    .envelope-photo{
+        height:56%;
+    }
+
+
+    .envelope-body{
+        height:62%;
+    }
+
+    .envelope-monogram{
+        top:72px;
+        font-size:44px;
+        letter-spacing:6px;
+    }
+
+    .seal{
+        width:96px;
+        height:96px;
+        bottom:-42px;
+    }
+
+    .seal-letter{
+        font-size:30px;
+    }
+
+.verse-box p{
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+
+.verse-box span{
+
+    font-size:14px;
+
+}
+
+.invite-text{
+
+    font-size:18px;
+
+    line-height:1.7;
+
+    letter-spacing:1px;
+
+}
+
+    .seal-text{
+        bottom:-40px;
+        font-size:11px;
+    }
+
+    .parents{
+        flex-direction:row;
+        justify-content:center;
+        align-items:flex-start;
+        gap:20px;
+        font-size:13px;
+        line-height:1.4;
+    }
+
+    .parents div{
+        width:45%;
+    }
+
+    .invite-section h1{
+        font-size:58px;
+    }
+
+    .date-box p{
+        font-size:38px;
+    }
+
+    .second-photo{
+        height:70vh;
+        object-fit:cover;
+        object-position:center 40%;
+    }
+
+    .countdown{
+        gap:8px;
+    }
+
+    .countdown span{
+        font-size:36px;
+    }
+
+    .location-section h2{
+
+    font-size:48px;
+
+}
+
+
+.cover-gradient{
+
+    background:
+    linear-gradient(
+        to bottom,
+        #fffdfb 0%,
+        rgba(255,253,251,0) 18%,
+        rgba(255,253,251,0) 58%,
+        #fffdfb 95%
+    );
+
+}
+
+
+}
